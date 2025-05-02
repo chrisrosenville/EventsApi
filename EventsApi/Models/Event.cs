@@ -9,14 +9,8 @@
         public string Location { get; set; }
         public int AttendeesCount { get; set; }
         // Constructor
-        public Event(int id, string name, string description, DateTime date, string location, int attendeesCount)
+        public Event()
         {
-            Id = id;
-            Name = name;
-            Description = description;
-            Date = date;
-            Location = location;
-            AttendeesCount = attendeesCount;
         }
     }
 }

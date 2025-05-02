@@ -23,8 +23,21 @@
         "ASPNETCORE_HTTPS_PORTS": "8081",
         "ASPNETCORE_HTTP_PORTS": "8080"
       },
-      "publishAllPorts": true,
+      "publishAllPorts": false,
       "useSSL": true
+    },
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchServiceName": "eventsapi",
+      "serviceActions": {
+        "eventsapi": "StartDebugging",
+        "db": "StartWithoutDebugging",
+        "pgadmin": "StartWithoutDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "commandVersion": "1.0",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json"

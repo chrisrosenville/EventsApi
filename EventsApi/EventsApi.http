@@ -1,4 +1,4 @@
-@EventsApi_HostAddress = https://localhost:32771
+@EventsApi_HostAddress = http://localhost:8000
 
 GET {{EventsApi_HostAddress}}/weatherforecast/
 Accept: application/json
@@ -9,10 +9,10 @@ POST {{EventsApi_HostAddress}}/api/events
 Content-Type: application/json
 
 {
-  "name": "Car meetup",
-  "description": "Not illegal at all",
+  "name": "Javascript Con",
+  "description": "Location might be undefined",
   "date": "2023-10-01T00:00:00Z",
-  "location": "Randers, Danmark",
+  "location": "Aarhus, Danmark",
   "attendeesCount": 1
 }
 
